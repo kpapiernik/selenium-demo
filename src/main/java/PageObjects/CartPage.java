@@ -42,9 +42,4 @@ public class CartPage extends BasePage{
         return driver.findElement(By.xpath("//*[@id=\"post-6\"]/div/div/div[2]/div/table/tbody/tr[2]/td/strong/span/bdi"))
                 .getText();
     }
-
-    public OrderPage goToPayment(){
-        wait.until(ExpectedConditions.elementToBeClickable(goToPaymentButton)).click();
-        return new OrderPage(driver);
-    }
 }
